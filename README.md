@@ -7,29 +7,30 @@ This repository demonstrates a **self-contained automated retraining pipeline** 
 ## **Project Structure**
 
 retraining_pipeline/
-│── data/ # Dummy datasets
-│ ├── training_data.csv
-│ └── training_data_new.csv # Simulates new data arrival
+├── data/                          # Dummy datasets
+│   ├── training_data.csv          # Initial training dataset
+│   └── training_data_new.csv      # Simulates new data arrival
 │
-│── models/ # Trained models saved here
-│ ├── model.pkl
-│ └── model_prod.pkl
+├── models/                        # Trained models storage
+│   ├── model.pkl                  # Current model version
+│   └── model_prod.pkl             # Production model
 │
-│── logs/ # Retraining logs
+├── logs/                          # Retraining logs and metrics
+│   ├── training_logs/             # Training execution logs
+│   └── performance_metrics/       # Model performance history
 │
-│── pipeline/ # Modular pipeline components
-│ ├── preprocess.py # Data loading and splitting
-│ ├── train.py # Model training
-│ ├── evaluate.py # Model evaluation
-│ └── utils.py # Trigger detection and helper functions
+├── pipeline/                      # Modular pipeline components
+│   ├── preprocess.py              # Data loading, cleaning, and splitting
+│   ├── train.py                   # Model training and hyperparameter tuning
+│   ├── evaluate.py                # Model evaluation and metrics calculation
+│   └── utils.py                   # Trigger detection and helper functions
 │
-│── generate_data.py # Script to generate dummy dataset
-│── main.py # Orchestrates the retraining pipeline
-│── requirements.txt # Python dependencies
+├── generate_data.py               # Script to generate dummy dataset
+├── main.py                        # Orchestrates the retraining pipeline
+├── requirements.txt               # Python dependencies
 │
-│── .github/workflows/ # Optional GitHub Actions workflow
-│ └── retrain.yaml
-
+└── .github/workflows/             # GitHub Actions CI/CD workflows
+    └── retrain.yaml               # Automated retraining workflow
 
 ---
 
@@ -79,6 +80,7 @@ python generate_data.py
 ```bash
 python main.py
 ```
+
 
 
 
