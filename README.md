@@ -70,7 +70,7 @@ This repository demonstrates a **self-contained automated retraining pipeline** 
 pip install -r requirements.txt 
 ```
 
-### **Step 2: Generate Dummy Data **
+### **Step 2: Generate Dummy Data**
 ```bash
 python generate_data.py
 ```
@@ -80,6 +80,7 @@ python generate_data.py
 ```bash
 python main.py
 ```
+
 
 
 
