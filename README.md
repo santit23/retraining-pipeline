@@ -6,7 +6,7 @@ This repository demonstrates a **self-contained automated retraining pipeline** 
 
 ## **Project Structure**
 
-retraining_pipeline/
+```retraining_pipeline/
 ├── data/                          # Dummy datasets
 │   ├── training_data.csv          # Initial training dataset
 │   └── training_data_new.csv      # Simulates new data arrival
@@ -31,7 +31,7 @@ retraining_pipeline/
 │
 └── .github/workflows/             # GitHub Actions CI/CD workflows
     └── retrain.yaml               # Automated retraining workflow
-
+```
 ---
 
 ## **Workflow Overview**
@@ -80,6 +80,7 @@ python generate_data.py
 ```bash
 python main.py
 ```
+
 
 
 
